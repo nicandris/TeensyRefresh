@@ -6,6 +6,7 @@
 */
 
 const int ledPin = 6;   // Teensy 2.0 = Pin 11, Teensy++ 2.0 = Pin 6
+const int delayt = 30000;   // Script Keypress Interval 
 
 void setup() {
 
@@ -23,6 +24,6 @@ void setup() {
 void loop() {
   Keyboard.press(KEY_F5);
   Keyboard.releaseAll();
-  delay(30000);  // This will send a refresh every 30seconds (time in miliseconds => 30*1000)
+  delay(delayt);  // This will send a refresh every 30seconds (time in miliseconds => 30*1000)
   
 }
